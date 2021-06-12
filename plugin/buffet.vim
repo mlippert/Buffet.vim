@@ -405,6 +405,7 @@ function! s:toggle(gotolastbuffer)
 	map <buffer> <silent> <2-leftrelease> :call <sid>loadbuffer(0)<cr>
 	nnoremap <buffer> <silent> <C-R> :call <sid>loadbuffer(0)<cr>
 	nnoremap <buffer> <silent> <C-M> :call <sid>loadbuffer(0)<cr>
+	nnoremap <buffer> <silent> <CR> :call <sid>loadbuffer(0)<cr>
 	if(!exists("g:buffetdisabledefaultmaps") ||  g:buffetdisabledefaultmaps == 0)
 		nnoremap <buffer> <silent> m :call <sid>addmark()<cr>
 		nnoremap <buffer> <silent> n :call <sid>decmark()<cr>
